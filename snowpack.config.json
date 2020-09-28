@@ -1,0 +1,12 @@
+{
+  "extends": "@snowpack/app-scripts-react",
+  "plugins": [
+    "@snowpack/plugin-optimize",
+    "@snowpack/plugin-react-refresh",
+    "snowpack-plugin-sass",
+    ["@snowpack/plugin-run-script", {
+      "cmd": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+      "watch": "watch \"$1\" src"
+    }]
+  ]
+}

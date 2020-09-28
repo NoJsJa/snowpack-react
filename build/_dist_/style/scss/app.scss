@@ -1,0 +1,17 @@
+$blue: #1875e7;
+
+@mixin testMixin {
+  color: red,
+}
+
+.mixinInclude {
+  @include testMixin;
+}
+
+.class1 {
+  color: $blue;
+}
+
+.class2 {
+  @extend .class1;
+}
